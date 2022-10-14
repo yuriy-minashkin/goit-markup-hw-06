@@ -394,12 +394,13 @@ li {
   appearance: none;
   position: absolute;
   left: 63px;
-  width: 286px;
+  width: 16px;
   height: 15px;
 }
 
 .input:hover,
 .input:focus {
+  outline: transparent;
   border-color: var(--accent-color);
   cursor: pointer;
 }
@@ -418,6 +419,10 @@ li {
 
 .checkbox-input:checked + .icon-checkbox {
   background-image: url(../images/checkbox-checked.svg);
+}
+
+.checkbox-input:focus {
+  outline: transparent;
 }
 
 .user_agreement_link {
